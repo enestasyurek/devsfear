@@ -15,6 +15,16 @@ public class copilot {
 
         int[] sum = ArrayUtilities.sumOfTwoArrays(arr2,arr3);
         System.out.println(Arrays.toString(sum));
+
+        System.out.println("----------------------------------------------------");
+
+        ArrayList<Integer> arr4 = new ArrayList<>();
+        arr4 = ArrayListUtilities.addElement(arr4,11);
+        System.out.println(arr4);
+
+        ArrayList<String> arr5 = new ArrayList<>();
+        arr5 = ArrayListUtilities.addMultipleElements(arr5,"Enes","Güngör","İsmail","Betül","Bahar","Güngör","Gökalp","İhsan");
+        System.out.println(arr5);
     }
 
     public static int[] addElement(int[] arr, int element){
@@ -25,6 +35,7 @@ public class copilot {
         newArr[newArr.length-1] = element;
         return newArr;
     }
+
 
 
 
