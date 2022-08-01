@@ -10,16 +10,28 @@ public class Student {
     public String email;
     public int grade;
 
-    public ArrayList<String> kids;
+    public ArrayList<String> siblings;
 
-    public Student(String name, int age, String phone, String email, int grade, String... kids) {
+    public Student(String name, int age, String phone, String email, int grade, String... siblings) {
         this.name = name;
         this.age = age;
         this.phone = phone;
         this.email = email;
         this.grade = grade;
-        this.kids = new ArrayList<>(Arrays.asList(kids));
+        this.siblings = new ArrayList<>(Arrays.asList(siblings));
     }
+
+
+    // Created a constructor that takes an ArrayList of siblings.
+/*    public Student(String name, int age, String phone, String email, int grade, ArrayList<String> siblings) {
+        this.name = name;
+        this.age = age;
+        this.phone = phone;
+        this.email = email;
+        this.grade = grade;
+        this.siblings = siblings;
+    }*/
+
 
 
     public String toString() {
@@ -29,7 +41,7 @@ public class Student {
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
                 ", grade=" + grade + + '\'' +
-                ", kids=" + kids +
+                ", siblings=" + siblings +
                 '}';
     }
 }
