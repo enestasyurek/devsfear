@@ -25,6 +25,11 @@ public class copilot {
         ArrayList<String> arr5 = new ArrayList<>();
         arr5 = ArrayListUtilities.addMultipleElements(arr5,"Enes","Güngör","İsmail","Betül","Bahar","Güngör","Gökalp","İhsan");
         System.out.println(arr5);
+
+        System.out.println("----------------------------------------------------");
+
+        arr5 = ArrayListUtilities.swapFirstAndLastElement(arr5);
+        System.out.println(arr5);
     }
 
     public static int[] addElement(int[] arr, int element){

@@ -10,8 +10,7 @@ public class ArrayListUtilities {
             newArr.add(arr.get(arr.size() - 1 - i));
         }
         return newArr;
-    }
-    public static ArrayList<Integer> addElement(ArrayList<Integer> arr, int element) {
+    }  public static ArrayList<Integer> addElement(ArrayList<Integer> arr, int element) {
         ArrayList<Integer> newArr = new ArrayList<>();
         for (int i = 0; i < arr.size(); i++) {
             newArr.add(arr.get(i));
@@ -30,6 +29,18 @@ public class ArrayListUtilities {
         }
         return newArr;
     }
+
+    public static ArrayList<String> swapFirstAndLastElement(ArrayList<String> arr) {
+        ArrayList<String> newArr = new ArrayList<>();
+        newArr.add(arr.get(arr.size() - 1));
+        for (int i = 0; i < arr.size() - 1; i++) {
+            newArr.add(arr.get(i));
+        }
+        return newArr;
+    }
+
+
+
 }
 
 // TEST
