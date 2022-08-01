@@ -28,8 +28,7 @@ public class copilot {
 
         System.out.println("----------------------------------------------------");
 
-        arr5 = ArrayListUtilities.swapFirstAndLastElement(arr5);
-        System.out.println(arr5);
+
     }
 
     public static int[] addElement(int[] arr, int element){
