@@ -10,6 +10,8 @@ public class Student {
     public String email;
     public int grade;
 
+    static String solid = "solid";
+
     public ArrayList<String> siblings;
 
     public Student(String name, int age, String phone, String email, int grade, String... siblings) {

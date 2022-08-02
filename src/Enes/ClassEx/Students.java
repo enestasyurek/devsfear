@@ -13,8 +13,11 @@ public class Students {
         Student student1 = new Student("Enes", 20, "0555555555", "asd@gmail.com",7, "Elif", "Sefa");
         Student student2 = new Student("Güngör", 21, "0555555555", "zxc@gmail.com",8);
 
+        student2.siblings.add("XXX");
         ArrayList<Student> students = new ArrayList<>();
         students.addAll(Arrays.asList(student1,student2));
+
+        System.out.println(Student.solid);
 
         System.out.println(students);
     }
