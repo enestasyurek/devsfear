@@ -9,10 +9,9 @@ public class Student {
     public String phone;
     public String email;
     public int grade;
+    public ArrayList<String> siblings;
 
     static String solid = "solid";
-
-    public ArrayList<String> siblings;
 
     public Student(String name, int age, String phone, String email, int grade, String... siblings) {
         this.name = name;
