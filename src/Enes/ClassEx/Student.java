@@ -22,6 +22,12 @@ public class Student {
         this.siblings = new ArrayList<>(Arrays.asList(siblings));
     }
 
+    public Student(String name, String phone, String email) {
+        this.name = name;
+        this.phone = phone;
+        this.email = email;
+    }
+
 
     // Created a constructor that takes an ArrayList of siblings.
 /*    public Student(String name, int age, String phone, String email, int grade, ArrayList<String> siblings) {
