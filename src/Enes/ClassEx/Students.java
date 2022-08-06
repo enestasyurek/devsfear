@@ -15,22 +15,21 @@ public class Students {
 
         Student student1 = new Student("Enes", 20, "0555555555", "asd@gmail.com",7, "Elif", "Sefa");
         Student student2 = new Student("Güngör", 21, "0555555555", "zxc@gmail.com",8);
-
+        Student student3 = new Student("İsmail", "22", "asdxq@gmail.com");
         student2.siblings.add("XXX");
         ArrayList<Student> students = new ArrayList<>();
-        students.addAll(Arrays.asList(student1,student2));
+        students.addAll(Arrays.asList(student1,student2,student3));
+
 
         System.out.println("---------------------------------------");
-        students.forEach(p -> System.out.println(p));
+        students.forEach(p -> System.out.println(p.grade == 7 ? p.name : ""));
         System.out.println("---------------------------------------");
         System.out.println(Student.solid);
         System.out.println("---------------------------------------");
         System.out.println(students);
         System.out.println("---------------------------------------");
-        for (Student student : students) {
-            System.out.println(student);
-
-        }
+        for (Student student : students) {System.out.println(student);}
         System.out.println("---------------------------------------");
     }
 }
+
